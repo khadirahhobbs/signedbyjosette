@@ -1,0 +1,150 @@
+@charset "utf-8";
+/* This code is going to make a CSS framework from scratch
+	by Khadirah Hobbs*/
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	margin: 0 1%;
+
+}
+
+section {
+	clear: both;
+
+}
+
+.row {
+	display: inline;
+}
+
+.col {
+	float: left; 
+	margin: 1% 0 1% 1%;
+
+}
+
+.col:first-child {
+	margin-left: 0;
+}
+
+/* Specific classes */
+
+.last {
+	margin-right: 0;
+}
+
+/* Columns' widths */
+
+.col-1 {
+	width: 100%;
+}
+
+.col-1-2 {
+	width: 49.5%;
+}
+
+.col-1-3 {
+	width: 32.666667%;
+}
+
+.col-2-3 {
+	width: 65.333333%;
+}
+
+.col-1-4 {
+	width: 24.25%;
+}
+
+.col-1-5 {
+	width: 19.2%;
+}
+
+.col-1-6 {
+	width: 15.833333%;
+}
+
+.col-1-8 {
+	width: 11.625%;
+}
+
+.col-1-9 {
+	width: 10.222222%;
+	overflow: hidden;
+}
+
+.col-1-10 {
+	width: 9.1%;
+}
+
+.col-1-12 {
+	width: 7.416667%;
+	overflow: hidden;
+}
+
+	
+@media only screen and (max-width: 768px)
+{
+	/* if the device is less that or equal to 720px,
+then the website will do the following */
+
+	.col { 
+		margin: 1% 0;
+	}
+	
+	.col-1,.col-1-2,  {
+		width: 100%;
+	}
+
+	.col-1-3 {
+		
+	}
+
+	.col-1-4 {
+		width: 48%;
+
+	}
+
+	.col-1-6, .col-1-6, .col-1-8, .col-1-9, .col-1-10, .col-1-12 {
+		display: none;
+	}
+
+	.col-1-5 {
+		margin: 1% .80% 1% 0;
+	}
+
+	.first-col {
+		float: left;
+	}
+
+	.last-col{
+		float: right;
+	}
+
+}/* closes media query for max-width: 720px */
+
+@media only screen and (max-width: 480px) 
+{
+	/* if the device is less that or equal to 480px,
+then the website will do the following */
+	
+	.col { 
+		margin: 1% 0;
+	}
+
+	.col-1, .col-1-2, .col-1-3, .col-2-3, .col-1-4, .col-1-5,
+	.col-1-6, .col-1-8, .col-1-9, .col-1-10, .col-1-12 { 
+		width: 100%; 
+	}
+
+	.col-1-6, .col-1-6, .col-1-8, .col-1-9, .col-1-10, .col-1-12 {
+		display: none;
+	}
+
+}/*closes media query for max-width: 480px*/
