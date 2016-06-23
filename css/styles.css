@@ -175,7 +175,14 @@ footer {
 /* closes media query for max-width: 768px */
 @media only screen and (max-width: 480px) {
   /* if the device is less that or equal to 480px,
-then the website will do the following */ }
+then the website will do the following */ 
+
+p {
+
+  font-size: 14px;
+}
+
+}
 /* closes media query for max-width: 480px */
 
 /*# sourceMappingURL=styles.css.map */
