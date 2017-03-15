@@ -9,4 +9,4 @@ used Git for my version control along with Github for deployment.
 
 The copy, images, and most text (except for the footer) belong to the owners of the original Signed By Josette site.
 
-View it live here: http://www.signedbyjosette.com/index.html
+View it live here: khadirahhobbs.github.io/signedbyjosette
